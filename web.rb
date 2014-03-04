@@ -1,5 +1,5 @@
 require 'sinatra' #comment
 
 get '/' do
-  "Hello, world"
+  "Hello, minna-san"
 end
