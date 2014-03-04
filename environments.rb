@@ -1,10 +1,10 @@
-configure :development do
-	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://jemonat@localhost/elements')
-end
+#configure :development do
+#	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://jemonat@localhost/elements')
+#end
 
-configure :production do
+#configure :production do
 	db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/elements')
-end
+#end
 
 ActiveRecord::Base.establish_connection(
 	:adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
