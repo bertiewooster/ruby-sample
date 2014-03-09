@@ -16,5 +16,7 @@ class Orbital < ActiveRecord::Base
 end
 
 get '/' do
-  "Hello, minna-san!"
+	"Hello, minna-san! @max_period = "
+	@max_period = Element.last(1)[0].period
+	puts @max_period
 end
