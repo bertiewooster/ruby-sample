@@ -1,11 +1,11 @@
 #configure :development do
 	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://jemonat@localhost/elements')
-	@config = "development"
+	@@config = "development"
 #end
 
 configure :production do
 	db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/elements')
-	@config = "production"
+	@@config = "production"
 end
 
 #=begin
