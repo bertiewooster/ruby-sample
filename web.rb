@@ -16,5 +16,6 @@ class Orbital < ActiveRecord::Base
 end
 
 get '/' do
+	@env = ENV['RACK_ENV']
 	erb :home
 end
