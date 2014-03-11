@@ -1,6 +1,7 @@
 <p>Hi there. The time is: 
 <% start_time = Time.new %>
 <%= start_time %></p>
-<%	@element = Element.find(2) %>
-<p><%=@element.name %></p>
-<p>@env = <%=@env%></p>
+<%	@element = Element.find(5) %>
+<p><%#@element.name %></p>
+<p>@config = |<%=@config%>|</p>
+<p>@env = |<%=@env%>|</p>
